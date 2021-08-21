@@ -50,3 +50,17 @@
 .lightText {
   color: #666;
 }
+
+.logowrapper{
+  width: 44%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 1rem 0;
+  flex-direction: row;
+}
+
+.logowrapper svg {
+  height: 26px;
+  width: 26px;
+}

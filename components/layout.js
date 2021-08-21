@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
+import { FaGithub, FaLinkedin, FaTwitter, FaDribbble } from "react-icons/fa";
 
 const name = "Devansh Bajaj";
 export const siteTitle = "Blog Website";
@@ -37,6 +38,20 @@ const Layout = ({ children, home }) => {
 							alt={name}
 						/>
 						<h1 className={utilStyles.heading2Xl}>{name}</h1>
+						<div className={utilStyles.logowrapper}>
+							<a>
+								<FaGithub />
+							</a>
+							<a>
+								<FaLinkedin />
+							</a>
+							<a>
+								<FaTwitter />
+							</a>
+							<a>
+								<FaDribbble />
+							</a>
+						</div>
 					</>
 				) : (
 					<>
