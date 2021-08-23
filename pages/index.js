@@ -4,6 +4,7 @@ import utilStyles from "../styles/utils.module.css";
 import { getSortedPostsData } from "../lib/posts";
 import Link from "next/link";
 import Date from "../components/date";
+import { useTheme } from "next-themes";
 
 export async function getStaticProps() {
 	const allPostsData = getSortedPostsData();
@@ -15,8 +16,17 @@ export async function getStaticProps() {
 }
 
 export default function Home({ allPostsData }) {
+	const { theme, setTheme } = useTheme();
+
 	return (
 		<Layout home>
+			{theme !== undefined && (
+				<select value={theme} onChange={(e) => setTheme(e.target.value)}>
+					<option value="dark">Dark</option>
+					<option value="light">Light</option>
+					<option value="system">System</option>
+				</select>
+			)}
 			<Head>
 				<title>{siteTitle}</title>
 			</Head>
