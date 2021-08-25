@@ -17,6 +17,8 @@ const Navbar = ({}) => {
 					<button onClick={() => setTheme("system")}>System</button>
 					<button onClick={() => setTheme("dark")}>Dark</button>
 					<button onClick={() => setTheme("light")}>Light</button>
+					<button onClick={() => setTheme("nord")}>Nord</button>
+					<button onClick={() => setTheme("blue")}>Blueish</button>
 				</div>
 			)}
 		</>

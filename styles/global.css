@@ -1,3 +1,25 @@
+:root {
+  --theme-bg: #EEEEEE;
+  --theme-text: #000;
+  --theme-accent: #D81B60;
+}
+html[data-theme="dark"], [data-theme='dark'] {
+  --theme-bg: #212121;
+  --theme-text: #EEEEEE;
+  --theme-accent: #D81B60;
+}
+[data-theme="nord"] , [data-theme='nord'] body {
+  --theme-bg: #1F1E1F;
+  --theme-text: #EEEEEE;
+  --theme-accent: #9AC1B4;
+}
+[data-theme="blue"] , [data-theme='blue'] body {
+  --theme-bg: #161c35;
+  --theme-text: #EEEEEE;
+  --theme-accent: #7c91e2;
+}
+
+
 html,
 body {
   padding: 0;
@@ -6,8 +28,8 @@ body {
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
   font-size: 18px;
-  background-color: #212121;
-  color: #EEEEEE;
+  background-color: var(--theme-bg);
+  color: var(--theme-text);
 }
 
 * {
@@ -15,7 +37,7 @@ body {
 }
 
 a {
-  color: #D81B60;
+  color: var(--theme-accent);
   text-decoration: none;
 }
 
@@ -27,3 +49,4 @@ img {
   max-width: 100%;
   display: block;
 }
+
