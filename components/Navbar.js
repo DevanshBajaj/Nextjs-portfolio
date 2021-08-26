@@ -1,5 +1,6 @@
 import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
+import styles from "./Navbar.module.css";
 
 const Navbar = ({}) => {
 	const [mounted, setMounted] = useState(false);
@@ -13,13 +14,17 @@ const Navbar = ({}) => {
 	return (
 		<>
 			{theme !== undefined && (
-				<div value={theme} onChange={(e) => setTheme(e.target.value)}>
-					<button onClick={() => setTheme("system")}>System</button>
-					<button onClick={() => setTheme("dark")}>Dark</button>
-					<button onClick={() => setTheme("light")}>Light</button>
-					<button onClick={() => setTheme("nord")}>Nord</button>
-					<button onClick={() => setTheme("blue")}>Blueish</button>
-				</div>
+				<select
+					className={styles.themeselect}
+					value={theme}
+					onChange={(e) => setTheme(e.target.value)}
+				>
+					<option value="system">System</option>
+					<option value="dark">Dark</option>
+					<option value="light">Light</option>
+					<option value="nord">Nord</option>
+					<option value="blue">Blueish</option>
+				</select>
 			)}
 		</>
 	);
