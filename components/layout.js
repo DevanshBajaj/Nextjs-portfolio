@@ -39,16 +39,19 @@ const Layout = ({ children, home }) => {
 						/>
 						<h1 className={utilStyles.heading2Xl}>{name}</h1>
 						<div className={utilStyles.logowrapper}>
-							<a>
+							<a href="https://github.com/DevanshBajaj" target="github">
 								<FaGithub />
 							</a>
-							<a>
+							<a
+								href="https://www.linkedin.com/in/devansh21db/"
+								target="linkedin"
+							>
 								<FaLinkedin />
 							</a>
-							<a>
+							<a href="https://twitter.com/devansh21db" target="twitter">
 								<FaTwitter />
 							</a>
-							<a>
+							<a href="https://dribbble.com/devanshbajaj" target="dribble">
 								<FaDribbble />
 							</a>
 						</div>
