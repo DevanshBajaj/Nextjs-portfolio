@@ -1,7 +1,7 @@
 import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
 import styles from "./Navbar.module.css";
-
+import Link from "next/link";
 const Navbar = ({}) => {
 	const [mounted, setMounted] = useState(false);
 	const { theme, setTheme } = useTheme();
@@ -12,7 +12,15 @@ const Navbar = ({}) => {
 	if (!mounted) return null;
 
 	return (
-		<>
+		<div className={styles.wrapper}>
+			<header className={styles.header}>
+				<Link href="/">
+					<a>Home</a>
+				</Link>
+				<Link href="/blog">
+					<a>Blog</a>
+				</Link>
+			</header>
 			{theme !== undefined && (
 				<select
 					className={styles.themeselect}
@@ -26,7 +34,7 @@ const Navbar = ({}) => {
 					<option value="blue">Blueish</option>
 				</select>
 			)}
-		</>
+		</div>
 	);
 };
 

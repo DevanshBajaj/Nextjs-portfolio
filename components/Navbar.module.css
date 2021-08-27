@@ -1,3 +1,29 @@
+.wrapper {
+  padding: 0.5rem 0.5rem;
+  margin: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media screen and (max-width: 968px) {
+  .wrapper {
+    justify-content: space-between;
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1rem;
+}
+
+.header a {
+  padding-right: 2rem;
+}
+
 .themeselect {
     margin: 1rem;
     padding: 0.3rem;
