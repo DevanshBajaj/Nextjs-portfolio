@@ -13,3 +13,9 @@
 .backToHome {
   margin: 3rem 0 0;
 }
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.6rem;  
+}
