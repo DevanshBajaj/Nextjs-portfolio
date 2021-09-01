@@ -1,15 +1,7 @@
 .wrapper {
-  padding: 0.5rem 0.5rem;
-  margin: 1rem 1.5rem;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-}
-
-@media screen and (max-width: 968px) {
-  .wrapper {
-    justify-content: space-between;
-  }
 }
 
 .header {
@@ -17,7 +9,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  padding: 1rem;
+  padding: 0 1rem;
 }
 
 .header a {
@@ -25,6 +17,8 @@
 }
 
 .themeselect {
+    border:0px;
+    outline:0px;
     margin: 1rem;
     padding: 0.2rem;
     border-radius: 0.2rem;
@@ -32,8 +26,4 @@
     color: var(--theme-accent);
     border: 1px solid var(--theme-accent);
     text-decoration: none;
-}
-
-.themeselect :hover {
-  border: 2px solid var(--theme-accent);
 }
