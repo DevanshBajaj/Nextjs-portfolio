@@ -55,3 +55,15 @@ img {
   padding: 0 1rem;
   margin: 1rem auto 6rem;
 }
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+background: var(--theme-bg);
+}
+
+::-webkit-scrollbar-thumb {
+background: var(--theme-accent); 
+}
