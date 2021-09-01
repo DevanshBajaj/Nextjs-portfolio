@@ -8,8 +8,10 @@ function App({ Component, pageProps }) {
 			themes={["pink", "red", "blue", "light", "dark"]}
 			forcedTheme={Component.theme || undefined}
 		>
-			<Navbar />
-			<Component {...pageProps} />
+			<div className="container">
+				<Navbar />
+				<Component {...pageProps} />
+			</div>
 		</ThemeProvider>
 	);
 }
