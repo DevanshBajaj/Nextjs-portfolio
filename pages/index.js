@@ -28,8 +28,25 @@ export default function Home({ allPostsData }) {
 					process of learning Kotlin.
 				</p>
 			</section>
-			<section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-				<h2 className={utilStyles.headingLg}>Recent Posts</h2>
+			<section className={`${utilStyles.paddingLg}`}>
+				<h2 className={utilStyles.heading1Xl}>
+					Projects<a>.</a>
+				</h2>
+				<div>
+					<p className={utilStyles.headingMd}>Github</p>
+					<a
+						href="https://github.com/DevanshBajaj"
+						target="github"
+						className={utilStyles.headingSmAccent}
+					>
+						Check it Out!
+					</a>
+				</div>
+			</section>
+			<section className={`${utilStyles.headingMd} ${utilStyles.paddingLg}`}>
+				<h2 className={utilStyles.heading1Xl}>
+					Recent Posts<a>.</a>
+				</h2>
 				<ul className={utilStyles.list}>
 					{allPostsData.slice(0, 1).map(({ id, date, title }) => (
 						<li className={utilStyles.listItem} key={id}>
