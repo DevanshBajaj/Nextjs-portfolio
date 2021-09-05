@@ -1,22 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
 :root {
-  --theme-bg: #EEEEEE;
+  --theme-bg: #ffffff;
   --theme-text: #000;
   --theme-accent: #D81B60;
+  --theme-sectext: #828282;
 }
 html[data-theme="dark"], [data-theme='dark'] {
   --theme-bg: #212121;
-  --theme-text: #EEEEEE;
+  --theme-text: #ffffff;
   --theme-accent: #D81B60;
+  --theme-sectext: #CFCFCF;
 }
 [data-theme="nord"] , [data-theme='nord'] body {
   --theme-bg: #1F1E1F;
-  --theme-text: #EEEEEE;
+  --theme-text: #ffffff;
   --theme-accent: #9AC1B4;
+  --theme-sectext: #CFCFCF;
 }
 [data-theme="blue"] , [data-theme='blue'] body {
   --theme-bg: #161c35;
-  --theme-text: #EEEEEE;
+  --theme-text: #ffffff;
   --theme-accent: #7c91e2;
+  --theme-sectext: #CFCFCF;
 }
 
 
@@ -24,8 +30,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
-    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Poppins', sans-serif;
   line-height: 1.6;
   font-size: 18px;
   background-color: var(--theme-bg);
