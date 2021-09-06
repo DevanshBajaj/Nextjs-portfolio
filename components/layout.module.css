@@ -4,6 +4,12 @@
   margin: 4rem auto 6rem;
 }
 
+.pagescontainer {
+  max-width: 36rem;
+  padding: 0 1rem;
+  margin: 1rem auto 6rem;
+}
+
 .header {
   display: flex;
   flex-direction: column;
