@@ -22,6 +22,7 @@ const blog = ({ allPostsData }) => {
 		<Layout>
 			<div className={styles.pagescontainer}>
 				<Head>
+					<title>Blog</title>
 					<link rel="icon" href="/favicon.ico" />
 					<meta name="description" content="Blogs" />
 					<meta

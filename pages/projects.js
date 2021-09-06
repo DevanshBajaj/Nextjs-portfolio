@@ -10,6 +10,7 @@ const projects = () => {
 		<Layout>
 			<div className={styles.pagescontainer}>
 				<Head>
+					<title>Projects</title>
 					<link rel="icon" href="/favicon.ico" />
 					<meta name="description" content="Projects" />
 					<meta

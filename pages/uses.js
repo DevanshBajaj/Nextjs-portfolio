@@ -9,6 +9,7 @@ const uses = () => {
 	return (
 		<Layout className={styles.pagescontainer}>
 			<Head>
+				<title>Uses</title>
 				<link rel="icon" href="/favicon.ico" />
 				<meta name="description" content="Uses" />
 				<meta
