@@ -34,15 +34,22 @@
 }
 
 .headingMd {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   line-height: 1.5;
-  margin: 0.5rem 0;
+  margin: 24px 0 12px 0;
+}
+
+.paragraphMd {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 24px 0;
 }
 
 .headingSm {
   font-size: 1rem;
   color: var(--theme-sectext);
   line-height: 1.6;
+  margin: 12px 0;
 }
 .headingSmAccent {
   font-size: 1rem;
@@ -92,5 +99,13 @@
 }
 
 .paddingLg {
-  padding-top: 2rem;
+  padding-top: 1.2rem;
+}
+
+@media  (max-width: 768px) {
+  .paragraphMd {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 24px 0;
+  }
 }
