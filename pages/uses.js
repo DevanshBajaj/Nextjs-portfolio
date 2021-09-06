@@ -1,12 +1,13 @@
 import utilStyles from "../styles/utils.module.css";
 import styles from "../components/layout.module.css";
 import Head from "next/head";
+import Layout from "../components/layout";
 
 export const siteTitle = "Projects";
 
 const uses = () => {
 	return (
-		<div className={styles.pagescontainer}>
+		<Layout className={styles.pagescontainer}>
 			<Head>
 				<link rel="icon" href="/favicon.ico" />
 				<meta name="description" content="Uses" />
@@ -20,7 +21,7 @@ const uses = () => {
 				<meta name="twitter:card" content="summary_large_image" />
 			</Head>
 			<section>adding stuff here soon.....</section>
-		</div>
+		</Layout>
 	);
 };
 

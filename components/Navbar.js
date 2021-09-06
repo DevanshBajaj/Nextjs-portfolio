@@ -2,11 +2,11 @@ import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
 import styles from "./Navbar.module.css";
 import Link from "next/link";
+
 const Navbar = ({}) => {
 	const [mounted, setMounted] = useState(false);
 	const { theme, setTheme } = useTheme();
 
-	// When mounted on client, now we can show the UI
 	useEffect(() => setMounted(true), []);
 
 	if (!mounted) return null;
@@ -19,6 +19,12 @@ const Navbar = ({}) => {
 				</Link>
 				<Link href="/blog">
 					<a>Blog</a>
+				</Link>
+				<Link href="/projects">
+					<a>Projects</a>
+				</Link>
+				<Link href="/uses">
+					<a>Uses</a>
 				</Link>
 			</header>
 			{theme !== undefined && (

@@ -13,7 +13,21 @@
 }
 
 .header a {
+  font-size: 1rem;
   padding-right: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .header a{
+    font-size: 0.8rem;
+    padding-right: 0.5rem;
+  }
 }
 
 .themeselect {

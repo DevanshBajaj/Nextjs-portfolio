@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "date-fns": "^2.23.0",
+    "framer-motion": "^4.1.17",
     "gray-matter": "^4.0.3",
     "next": "^11.0.0",
     "next-dark-mode": "^3.0.0",

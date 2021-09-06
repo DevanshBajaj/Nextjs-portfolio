@@ -47,9 +47,6 @@ const blog = ({ allPostsData }) => {
 						</small>
 					</div>
 				))}
-				<Link href="/">
-					<a>← Back to home</a>
-				</Link>
 			</div>
 		</Layout>
 	);
