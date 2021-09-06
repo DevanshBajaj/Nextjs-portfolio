@@ -20,28 +20,18 @@ export default function Home({ allPostsData }) {
 			<Head>
 				<title>{siteTitle}</title>
 			</Head>
-			<section className={utilStyles.headingMd}>
-				<p>
-					I am proficient in JavaScript and CSS / SASS with experience in
-					frameworks like React and Bulma. I also have some experience with
-					Python, Docker and Django REST framework. I am currently in the
-					process of learning Kotlin.
-				</p>
-			</section>
-			<section className={`${utilStyles.paddingLg}`}>
+			<section className={`${utilStyles.paragraphMd} ${utilStyles.paddingLg}`}>
 				<h2 className={utilStyles.heading1Xl}>
-					Projects<a>.</a>
+					About Me<a>.</a>
 				</h2>
-				<div>
-					<p className={utilStyles.headingMd}>Github</p>
-					<a
-						href="https://github.com/DevanshBajaj"
-						target="github"
-						className={utilStyles.headingSmAccent}
-					>
-						Check it Out!
-					</a>
-				</div>
+				<p>
+					I&#39;m proficient in JavaScript and CSS / SASS with experience in
+					frameworks like React and Next.js. I have some experience with Python,
+					Docker and Django REST framework. I also have experience in UI/UX
+					designing, I like exploring different ways to make a design user
+					friendly. I&#39;m comfortable with prototyping, wireframing using
+					tools like Figma and Adobe XD.
+				</p>
 			</section>
 			<section className={`${utilStyles.headingMd} ${utilStyles.paddingLg}`}>
 				<h2 className={utilStyles.heading1Xl}>
@@ -63,7 +53,7 @@ export default function Home({ allPostsData }) {
 					))}
 				</ul>
 				<Link href={`/blog`}>
-					<a>More posts</a>
+					<a className={utilStyles.headingSmAccent}>More posts</a>
 				</Link>
 			</section>
 		</Layout>
