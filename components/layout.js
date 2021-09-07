@@ -48,16 +48,24 @@ const Layout = ({ children, home }) => {
 					<header className={styles.header}>
 						{home ? (
 							<>
-								<Image
-									priority
-									src="/images/profile.jpg"
-									className={utilStyles.borderCircle}
-									height={144}
-									width={144}
-									alt={name}
-								/>
-								<h1 className={utilStyles.heading2Xl}>{name}</h1>
-								<div className={utilStyles.logowrapper}>
+								<>
+									<div className={styles.profileimg}>
+										<Image
+											priority
+											src="/images/profile.png"
+											height={144}
+											width={144}
+											className={styles.profileimg}
+											alt={name}
+										/>
+									</div>
+								</>
+								<a className={utilStyles.headingMd}>Hello, My name is</a>{" "}
+								<a></a>
+								<h1 className={utilStyles.heading2Xl}>
+									Devansh Bajaj <a>.</a> 👋
+								</h1>
+								<div className={styles.logowrapper}>
 									<a href="https://github.com/DevanshBajaj" target="github">
 										<FaGithub />
 									</a>
