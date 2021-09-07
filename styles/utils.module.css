@@ -3,7 +3,7 @@
   line-height: 1.2;
   font-weight: 800;
   letter-spacing: -0.05rem;
-  margin: 1rem 0;
+  margin: 0 0 1rem 0;
 }
 
 .heading1Xl {
@@ -57,9 +57,6 @@
   line-height: 1.6;
 }
 
-.borderCircle {
-  border-radius: 9999px;
-}
 
 .colorInherit {
   color: inherit;
@@ -83,29 +80,20 @@
   color: #666;
 }
 
-
-.logowrapper{
-  width: 44%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: 1rem 0;
-  flex-direction: row;
-}
-
-.logowrapper svg {
-  height: 26px;
-  width: 26px;
-}
-
 .paddingLg {
   padding-top: 1.2rem;
 }
 
-@media  (max-width: 768px) {
+@media  (max-width: 767px) {
   .paragraphMd {
     font-size: 1rem;
     line-height: 1.5;
     margin: 24px 0;
+  }
+  .heading2Xl {
+    font-size: 1.6rem;
+    line-height: 1.2;
+    font-weight: 800;
+    margin: 0 0 1rem 0;
   }
 }
