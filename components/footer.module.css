@@ -5,3 +5,45 @@
   align-items: center;
   margin: 2rem 0;
 }
+
+
+.footerText {
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+  color: var(--theme-text);
+}
+
+.footerEmail {
+  font-size: 0.7rem;
+  color: var(--theme-accent);
+}
+
+.logowrapper{
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  margin: 1rem 0 0 0;
+  flex-direction: row;
+}
+
+.logowrapper svg {
+  color: var(--theme-accent);
+  height: 16px;
+  width: 16px;
+}
+
+@media screen and (max-width: 767px) {
+  .footerText {
+    font-size: 0.7rem;
+  }
+  .footerEmail {
+    font-size: 0.6rem;
+  }
+  .logowrapper svg {
+    height: 16px;
+    width: 16px;
+  }
+}
+
