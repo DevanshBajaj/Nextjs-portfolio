@@ -5,6 +5,7 @@
   --theme-text: #000;
   --theme-accent: #D81B60;
   --theme-sectext: #828282;
+  --transition: all 0.25s cubic-bezier(0.65, 0.05, 0.36, 1);
 }
 html[data-theme="dark"], [data-theme='dark'] {
   --theme-bg: #212121;
@@ -42,12 +43,7 @@ body {
 }
 
 a {
-  color: var(--theme-accent);
   text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
 }
 
 img {

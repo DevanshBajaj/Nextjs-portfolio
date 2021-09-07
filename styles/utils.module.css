@@ -57,6 +57,11 @@
   line-height: 1.6;
 }
 
+.accentLink {
+  color: var(--theme-accent);
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+}
 
 .colorInherit {
   color: inherit;
