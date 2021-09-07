@@ -22,15 +22,19 @@
 }
 
 @media screen and (max-width: 767px) {
-  .wrapper {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-
   .header a{
-    font-size: 0.8rem;
+    font-size: 16px;
     padding-right: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .header a{
+    font-size: 14px;
+    padding-right: 0.5rem;
+  }
+  .header{
+    padding: 0;
   }
 }
 
