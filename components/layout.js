@@ -56,7 +56,6 @@ const Layout = ({ children, home }) => {
 											src="/images/profile.png"
 											height={144}
 											width={144}
-											className={styles.profileimg}
 											alt={name}
 										/>
 									</div>
