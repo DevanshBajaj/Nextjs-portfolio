@@ -1,6 +1,7 @@
 import "../styles/global.css";
 import { ThemeProvider } from "next-themes";
 import { AnimatePresence } from "framer-motion";
+import Footer from "../components/footer";
 
 function App({ Component, pageProps }) {
 	return (
@@ -16,6 +17,7 @@ function App({ Component, pageProps }) {
 					<Component {...pageProps} />
 				</AnimatePresence>
 			</div>
+			<Footer />
 		</ThemeProvider>
 	);
 }
