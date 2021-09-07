@@ -24,7 +24,7 @@ const projects = () => {
 				</Head>
 				<section>
 					<h2 className={utilStyles.heading1Xl}>
-						Projects<a>.</a>
+						Projects<a className={utilStyles.accentLink}>.</a>
 					</h2>
 					<div>
 						<ul className={utilStyles.list}>

@@ -35,12 +35,14 @@ const blog = ({ allPostsData }) => {
 					<meta name="twitter:card" content="summary_large_image" />
 				</Head>
 				<h2 className={utilStyles.heading1Xl}>
-					Blogs<a>.</a>
+					Blogs<a className={utilStyles.accentLink}>.</a>
 				</h2>
 				{allPostsData.map(({ id, date, title }) => (
 					<div className={styles.posts} key={id}>
 						<Link href={`/posts/${id}`}>
-							<a className={utilStyles.headingLg}>{title}</a>
+							<a className={`${utilStyles.headingLg} ${utilStyles.accentLink}`}>
+								{title}
+							</a>
 						</Link>
 						{id}
 						<small className={utilStyles.lightText}>

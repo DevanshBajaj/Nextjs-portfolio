@@ -15,6 +15,7 @@
 .header a {
   font-size: 1rem;
   padding-right: 2rem;
+  color: var(--theme-accent);
 }
 
 .header a:hover {
