@@ -89,6 +89,10 @@
   padding-top: 1.2rem;
 }
 
+.marginreset {
+  margin: 0;
+}
+
 @media  (max-width: 767px) {
   .paragraphMd {
     font-size: 1rem;
@@ -101,4 +105,18 @@
     font-weight: 800;
     margin: 0 0 1rem 0;
   }
+}
+
+.blogauthor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: var(--theme-sectext);
+  margin: 2rem 0;
+}
+
+.blogauthor__avatar {
+  border-radius: 50%;
 }

@@ -1,11 +1,30 @@
 ---
 title: 'When to Use Static Generation v.s. Server-side Rendering'
 date: '2020-01-02'
+author: 'devansh bajaj'
+ogimage: '/public/images/profile.png'
 ---
 
 We recommend using **Static Generation** (with and without data) whenever possible because your page can be built once and served by CDN, which makes it much faster than having a server render the page on every request.
 
 You can use Static Generation for many types of pages, including:
+
+```javascript
+import React from "react";
+import fs from "fs";
+import path from "path";
+import matter from "gray-matter";
+
+import ReactMarkdown from "react-markdown/with-html";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+
+import Layout from "../../components/Layout";
+```
+
+```kotlin
+@JsonClass(generateAdapter = true)
+class TextParts(val heading: String, val body: String? = null)
+```
 
 - Marketing pages
 - Blog posts
