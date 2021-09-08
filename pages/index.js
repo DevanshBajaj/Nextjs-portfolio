@@ -33,6 +33,12 @@ export default function Home({ allPostsData }) {
 					Recently I&#39;ve been working with technologies like Javascript,
 					React, Next.js and I&#39;m currently learning Node.js. I also love
 					working with tools like Figma for designing.
+					<br />
+					<br />
+					Here you can see stuff I use in my daily life -{" "}
+					<Link href="/uses">
+						<a className={utilStyles.accentLink}>Uses.</a>
+					</Link>
 				</p>
 			</section>
 			<section className={`${utilStyles.headingMd} ${utilStyles.paddingLg}`}>

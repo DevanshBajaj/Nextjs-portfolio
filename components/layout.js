@@ -64,7 +64,7 @@ const Layout = ({ children, home }) => {
 									className={`${utilStyles.headingMd} ${utilStyles.accentLink}`}
 								>
 									Hello, My name is
-								</a>{" "}
+								</a>
 								<a></a>
 								<h1 className={utilStyles.heading2Xl}>
 									Devansh Bajaj <a className={utilStyles.accentLink}>.</a> 👋

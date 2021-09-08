@@ -1,7 +1,7 @@
 .container {
   max-width: 36rem;
   padding: 0 1rem;
-  margin: 4rem auto 6rem;
+  margin: 3rem auto 6rem;
 }
 
 .pagescontainer {
@@ -28,9 +28,9 @@
 .logowrapper{
   display: flex;
   justify-content: flex-start;
-  gap: 2rem;
+  gap: 1rem;
   align-items: flex-start;
-  margin: 2rem 0 0 0;
+  margin: 24px 0 0 0;
   flex-direction: row;
 }
 
