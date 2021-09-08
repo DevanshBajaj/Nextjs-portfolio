@@ -1,8 +1,13 @@
 import Layout from "../../components/layout";
 import Head from "next/head";
 import Date from "../../components/date";
+import Image from "next/image";
+import ReactMarkdown from "react-markdown";
+import CodeBlock from "../../components/codeblock";
+import Profile from "../../public/images/profile.png";
 import { getAllPostIds, getPostData } from "../../lib/posts";
 import utilStyles from "../../styles/utils.module.css";
+import rehypeRaw from "rehype-raw";
 
 export async function getStaticProps({ params }) {
 	const postData = await getPostData(params.id);
@@ -37,10 +42,23 @@ export default function Post({ postData }) {
 			</Head>
 			<article>
 				<h1 className={utilStyles.headingXl}>{postData.title}</h1>
-				<div className={utilStyles.lightText}>
-					<Date dateString={postData.date} />
+				<div className={utilStyles.blogauthor}>
+					<div className={utilStyles.blog}>
+						<h3 className={utilStyles.marginreset}>Devansh Bajaj</h3>
+						<Date dateString={postData.date} />
+					</div>
+					<Image
+						priority
+						src={Profile}
+						height={54}
+						width={54}
+						alt="author"
+						className={utilStyles.blogauthor__avatar}
+					/>
 				</div>
-				<div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+				<ReactMarkdown components={CodeBlock}>
+					{postData.markdown}
+				</ReactMarkdown>
 			</article>
 		</Layout>
 	);
