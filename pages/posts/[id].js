@@ -43,18 +43,19 @@ export default function Post({ postData }) {
 			<article>
 				<h1 className={utilStyles.headingXl}>{postData.title}</h1>
 				<div className={utilStyles.blogauthor}>
-					<div className={utilStyles.blog}>
-						<h3 className={utilStyles.marginreset}>Devansh Bajaj</h3>
-						<Date dateString={postData.date} />
-					</div>
 					<Image
 						priority
 						src={Profile}
-						height={54}
-						width={54}
+						height={40}
+						width={40}
 						alt="author"
 						className={utilStyles.blogauthor__avatar}
 					/>
+					<h3 className={utilStyles.marginreset}>
+						Devansh Bajaj
+						<span> on </span>
+						<Date dateString={postData.date} />
+					</h3>
 				</div>
 				<ReactMarkdown components={CodeBlock}>
 					{postData.markdown}
