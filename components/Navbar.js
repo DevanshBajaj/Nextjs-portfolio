@@ -23,23 +23,29 @@ const Navbar = ({}) => {
 				<Link href="/projects">
 					<a>Projects</a>
 				</Link>
-				<Link href="/uses">
-					<a>Uses</a>
-				</Link>
-			</header>
-			{theme !== undefined && (
-				<select
-					className={styles.themeselect}
-					value={theme}
-					onChange={(e) => setTheme(e.target.value)}
+				<a
+					href="https://github.com/DevanshBajaj/Nextjs-portfolio/raw/main/public/assets/devanshResume.pdf"
+					rel="noreferrer"
+					target="_blank"
 				>
-					<option value="system">System</option>
-					<option value="dark">Dark</option>
-					<option value="light">Light</option>
-					<option value="nord">Nord</option>
-					<option value="blue">Blueish</option>
-				</select>
-			)}
+					Resume
+				</a>{" "}
+			</header>
+			<div>
+				{theme !== undefined && (
+					<select
+						className={styles.themeselect}
+						value={theme}
+						onChange={(e) => setTheme(e.target.value)}
+					>
+						<option value="system">System</option>
+						<option value="dark">Dark</option>
+						<option value="light">Light</option>
+						<option value="nord">Nord</option>
+						<option value="blue">Blueish</option>
+					</select>
+				)}
+			</div>
 		</div>
 	);
 };
