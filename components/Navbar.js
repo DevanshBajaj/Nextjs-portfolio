@@ -33,17 +33,19 @@ const Navbar = ({}) => {
 			</header>
 			<div>
 				{theme !== undefined && (
-					<select
-						className={styles.themeselect}
-						value={theme}
-						onChange={(e) => setTheme(e.target.value)}
-					>
-						<option value="system">System</option>
-						<option value="dark">Dark</option>
-						<option value="light">Light</option>
-						<option value="nord">Nord</option>
-						<option value="blue">Blueish</option>
-					</select>
+					<div className={styles.select_wrapper}>
+						<select
+							className={styles.themeselect}
+							value={theme}
+							onChange={(e) => setTheme(e.target.value)}
+						>
+							<option value="system">System</option>
+							<option value="dark">Dark</option>
+							<option value="light">Light</option>
+							<option value="nord">Nord</option>
+							<option value="blue">Blueish</option>
+						</select>
+					</div>
 				)}
 			</div>
 		</div>

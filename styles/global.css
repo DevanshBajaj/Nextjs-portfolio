@@ -51,6 +51,11 @@ img {
   display: block;
 }
 
+select {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
 .container {
   max-width: 36rem;
   padding: 0 1rem;
