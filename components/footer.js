@@ -7,9 +7,9 @@ const footer = () => {
 			<a className={styles.footerText}> Designed and built by Devansh Bajaj</a>
 			<a
 				className={styles.footerEmail}
-				href="mailto:devansh21db.db@gmail.com?Subject=Hello"
+				href="mailto:db@devanshbajaj.dev?Subject=Hello"
 			>
-				devansh21db.db@gmail.com
+				db@devanshbajaj.dev
 			</a>
 			<div className={styles.logowrapper}>
 				<a href="https://twitter.com/devansh21db" target="twitter">
