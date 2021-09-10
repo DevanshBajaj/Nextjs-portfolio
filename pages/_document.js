@@ -8,7 +8,7 @@ class MyDocument extends Document {
 
 	render() {
 		return (
-			<Html>
+			<Html lang="en">
 				<Head>
 					<meta name="application-name" content="PWA App" />
 					<meta name="apple-mobile-web-app-capable" content="yes" />
@@ -107,4 +107,4 @@ class MyDocument extends Document {
 	}
 }
 
-export default MyDocumen;
+export default MyDocument;
