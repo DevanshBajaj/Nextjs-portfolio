@@ -9,12 +9,12 @@
 
 .footerText {
   margin-bottom: 0.5rem;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   color: var(--theme-text);
 }
 
 .footerEmail {
-  font-size: 0.7rem;
+  font-size: 1rem;
   color: var(--theme-accent);
 }
 
@@ -36,10 +36,10 @@
 
 @media screen and (max-width: 767px) {
   .footerText {
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
   .footerEmail {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
   .logowrapper svg {
     height: 16px;
