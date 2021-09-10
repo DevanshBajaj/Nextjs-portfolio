@@ -7,7 +7,6 @@ import CodeBlock from "../../components/codeblock";
 import Profile from "../../public/images/profile.png";
 import { getAllPostIds, getPostData } from "../../lib/posts";
 import utilStyles from "../../styles/utils.module.css";
-import rehypeRaw from "rehype-raw";
 
 export async function getStaticProps({ params }) {
 	const postData = await getPostData(params.id);

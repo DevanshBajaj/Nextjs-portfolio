@@ -3,6 +3,7 @@ import { ThemeProvider } from "next-themes";
 import { AnimatePresence } from "framer-motion";
 import Footer from "../components/footer";
 import NextNprogress from "nextjs-progressbar";
+import Head from "next/head";
 
 function App({ Component, pageProps }) {
 	return (
@@ -11,6 +12,12 @@ function App({ Component, pageProps }) {
 			forcedTheme={Component.theme || undefined}
 			defaultTheme="blue"
 		>
+			<Head>
+				<meta
+					name="viewport"
+					content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, user-scalable=no, viewport-fit=cover"
+				/>
+			</Head>
 			<NextNprogress
 				color="var(--theme-accent)"
 				startPosition={0.3}
