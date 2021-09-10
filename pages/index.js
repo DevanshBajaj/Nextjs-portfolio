@@ -22,7 +22,7 @@ export default function Home({ allPostsData }) {
 			</Head>
 			<section className={`${utilStyles.paragraphMd} ${utilStyles.paddingLg}`}>
 				<h2 className={`${utilStyles.heading1Xl} ${utilStyles.paddingLg}`}>
-					About Me<a className={utilStyles.accentLink}>.</a>
+					About Me<span className={utilStyles.accentLink}>.</span>
 				</h2>
 				<p>
 					I&#39;m a Frontend developer based in Ghaziabad, India. I have a
@@ -43,7 +43,7 @@ export default function Home({ allPostsData }) {
 			</section>
 			<section className={`${utilStyles.headingMd} ${utilStyles.paddingLg}`}>
 				<h2 className={utilStyles.heading1Xl}>
-					Recent Posts<a className={utilStyles.accentLink}>.</a>
+					Recent Posts<span className={utilStyles.accentLink}>.</span>
 				</h2>
 				<ul className={utilStyles.list}>
 					{allPostsData.slice(0, 1).map(({ id, date, title }) => (

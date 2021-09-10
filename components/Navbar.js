@@ -24,7 +24,7 @@ const Navbar = ({}) => {
 					<a>Projects</a>
 				</Link>
 				<a
-					href="https://github.com/DevanshBajaj/Nextjs-portfolio/raw/main/public/assets/devanshResume.pdf"
+					href="https://raw.githubusercontent.com/DevanshBajaj/OLD_portfolio/master/devanshResume.pdf"
 					rel="noreferrer"
 					target="_blank"
 				>

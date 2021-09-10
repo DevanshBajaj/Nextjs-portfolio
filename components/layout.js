@@ -4,13 +4,7 @@ import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import {
-	FaGithub,
-	FaLinkedin,
-	FaTwitter,
-	FaDribbble,
-	FaTelegram,
-} from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTwitter, FaDribbble } from "react-icons/fa";
 import Navbar from "./Navbar";
 
 const name = "Devansh Bajaj";
@@ -60,14 +54,15 @@ const Layout = ({ children, home }) => {
 										/>
 									</div>
 								</>
-								<a
+								<p
 									className={`${utilStyles.headingMd} ${utilStyles.accentLink}`}
 								>
 									Hello, My name is
-								</a>
+								</p>
 								<a></a>
 								<h1 className={utilStyles.heading2Xl}>
-									Devansh Bajaj <a className={utilStyles.accentLink}>.</a> 👋
+									Devansh Bajaj <span className={utilStyles.accentLink}>.</span>{" "}
+									👋
 								</h1>
 								<div className={styles.logowrapper}>
 									<a href="https://github.com/DevanshBajaj" target="github">

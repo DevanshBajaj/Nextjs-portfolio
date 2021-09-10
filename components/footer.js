@@ -4,7 +4,12 @@ import { FaTwitter, FaTelegram } from "react-icons/fa";
 const footer = () => {
 	return (
 		<div className={styles.footer}>
-			<a className={styles.footerText}> Designed and built by Devansh Bajaj</a>
+			<a
+				href="https://nextjs-devanshblog.vercel.app/"
+				className={styles.footerText}
+			>
+				Designed and built by Devansh Bajaj
+			</a>
 			<a
 				className={styles.footerEmail}
 				href="mailto:db@devanshbajaj.dev?Subject=Hello"
