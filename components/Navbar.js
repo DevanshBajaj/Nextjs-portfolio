@@ -43,7 +43,7 @@ const Navbar = ({}) => {
 							<option value="dark">Dark</option>
 							<option value="light">Light</option>
 							<option value="nord">Nord</option>
-							<option value="blue">Blueish</option>
+							<option value="blue">Blue</option>
 						</select>
 					</div>
 				)}

@@ -7,8 +7,9 @@ import NextNprogress from "nextjs-progressbar";
 function App({ Component, pageProps }) {
 	return (
 		<ThemeProvider
-			themes={["pink", "red", "blue", "light", "dark"]}
+			themes={["dark", "light", "nord", "blue"]}
 			forcedTheme={Component.theme || undefined}
+			defaultTheme="blue"
 		>
 			<NextNprogress
 				color="var(--theme-accent)"
