@@ -59,25 +59,37 @@ const Layout = ({ children, home }) => {
 								>
 									Hello, My name is
 								</p>
-								<a></a>
 								<h1 className={utilStyles.heading2Xl}>
 									Devansh Bajaj <span className={utilStyles.accentLink}>.</span>{" "}
 									👋
 								</h1>
 								<div className={styles.logowrapper}>
-									<a href="https://github.com/DevanshBajaj" target="github">
+									<a
+										href="https://github.com/DevanshBajaj"
+										target="github"
+										aria-label="Github"
+									>
 										<FaGithub />
 									</a>
 									<a
 										href="https://www.linkedin.com/in/devansh21db/"
 										target="linkedin"
+										aria-label="LinkedIn"
 									>
 										<FaLinkedin />
 									</a>
-									<a href="https://twitter.com/devansh21db" target="twitter">
+									<a
+										href="https://twitter.com/devansh21db"
+										target="twitter"
+										aria-label="Twitter"
+									>
 										<FaTwitter />
 									</a>
-									<a href="https://dribbble.com/devanshbajaj" target="dribble">
+									<a
+										href="https://dribbble.com/devanshbajaj"
+										target="dribble"
+										aria-label="Dribble"
+									>
 										<FaDribbble />
 									</a>
 								</div>

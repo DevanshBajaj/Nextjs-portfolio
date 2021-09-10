@@ -29,7 +29,7 @@ const Navbar = ({}) => {
 					target="_blank"
 				>
 					Resume
-				</a>{" "}
+				</a>
 			</header>
 			<div>
 				{theme !== undefined && (

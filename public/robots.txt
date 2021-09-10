@@ -1,0 +1,9 @@
+Sitemap: https://nextjs-devanshblog.vercel.app/api/posts-sitemap
+
+# Googlebot
+User-agent: Googlebot
+Disallow: /api/*
+
+# Everybody else
+User-agent: *
+Allow: /

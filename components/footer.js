@@ -17,10 +17,18 @@ const footer = () => {
 				db@devanshbajaj.dev
 			</a>
 			<div className={styles.logowrapper}>
-				<a href="https://twitter.com/devansh21db" target="twitter">
+				<a
+					href="https://twitter.com/devansh21db"
+					target="twitter"
+					aria-label="Twitter"
+				>
 					<FaTwitter />
 				</a>
-				<a href="https://t.me/devanshbajaj" target="dribble">
+				<a
+					href="https://t.me/devanshbajaj"
+					target="telegram"
+					aria-label="Telegram"
+				>
 					<FaTelegram />
 				</a>
 			</div>

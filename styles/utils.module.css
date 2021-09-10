@@ -82,7 +82,7 @@
 }
 
 .lightText {
-  color: #666;
+  color: var(--theme-sectext);
 }
 
 .paddingLg {
