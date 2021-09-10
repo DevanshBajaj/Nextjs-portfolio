@@ -10,7 +10,8 @@ const CodeBlock = {
 				style={atomOneDark}
 				language={match[1]}
 				PreTag="div"
-				showLineNumbers={true}
+				wrapLines={true}
+				wrapLongLines={true}
 				{...props}
 			>
 				{String(children).replace(/\n$/, "")}
