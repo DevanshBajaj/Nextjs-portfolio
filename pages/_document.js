@@ -10,6 +10,7 @@ class MyDocument extends Document {
 		return (
 			<Html lang="en">
 				<Head>
+					<meta charset="UTF-8" />
 					<meta name="application-name" content="PWA App" />
 					<meta name="apple-mobile-web-app-capable" content="yes" />
 					<meta

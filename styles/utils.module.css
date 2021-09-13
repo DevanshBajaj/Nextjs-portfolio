@@ -38,6 +38,13 @@
   line-height: 1.5;
   margin: 24px 0 12px 0;
 }
+.headingMdAccent {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-decoration: none;
+  margin: 24px 0 12px 0;
+  color: var(--theme-accent);
+}
 
 .paragraphMd {
   font-size: 1rem;
@@ -87,6 +94,10 @@
 
 .paddingLg {
   padding-top: 1rem;
+}
+
+.paddingMd {
+  padding-top: 0.8rem;
 }
 
 .marginreset {
