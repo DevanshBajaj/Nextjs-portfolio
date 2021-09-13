@@ -5,12 +5,40 @@ import Layout from "../components/layout";
 
 export const siteTitle = "Projects";
 
+const projectList = [
+	{
+		id: 1,
+		title: "Pokedex",
+		description: `I've created this project in react to practice and improve
+		my skills. I made it with the help of an API called using
+		axios, React to create frontend with components and some
+		styling.`,
+		url: `https://pokedex.devanshbajaj.dev/`,
+		demo: "Live Demo",
+	},
+	{
+		id: 2,
+		title: "Hacker News Website",
+		description: `A custom infinite scroll implementation for the HackerNews
+		website made with React to try Intersection observer API with
+		the help of HackerNews API.`,
+		url: `https://hn-website.netlify.app/`,
+		demo: "Live Demo",
+	},
+	{
+		id: 3,
+		title: "Other Projects.",
+		url: `https://github.com/DevanshBajaj`,
+		demo: "Check it Out",
+	},
+];
+
 const projects = () => {
 	return (
 		<Layout>
 			<div className={styles.pagescontainer}>
 				<Head>
-					<title>Projects</title>
+					<title>{siteTitle}</title>
 					<link rel="icon" href="/favicon.ico" />
 					<meta name="description" content="Projects" />
 					<meta
@@ -24,65 +52,30 @@ const projects = () => {
 				</Head>
 				<section>
 					<h2 className={utilStyles.heading1Xl}>
-						Projects<span className={utilStyles.accentLink}>.</span>
+						{siteTitle}
+						<span className={utilStyles.accentLink}>.</span>
 					</h2>
-					<div>
-						<ul className={utilStyles.list}>
-							<li className={utilStyles.listItem}>
-								<p
-									className={`${utilStyles.headingMd} ${utilStyles.paddingLg}`}
-								>
-									Pokedex
-								</p>
-								<a
-									href="https://pokedex.devanshbajaj.dev/"
-									target="pokedex"
-									className={utilStyles.headingSmAccent}
-								>
-									Live Demo
-								</a>
-								<p className={utilStyles.headingSm}>
-									I&#39;ve created this project in react to practice and improve
-									my skills. I made it with the help of an API called using
-									axios, React to create frontend with components and some
-									styling.
-								</p>
-							</li>
-							<li className={utilStyles.listItem}>
-								<p
-									className={`${utilStyles.headingMd} ${utilStyles.paddingLg}`}
-								>
-									Hacker News Website
-								</p>
-								<a
-									href="https://hn-website.netlify.app/"
-									target="hackernews"
-									className={utilStyles.headingSmAccent}
-								>
-									Live Demo
-								</a>
-								<p className={utilStyles.headingSm}>
-									A custom infinite scroll implementation for the HackerNews
-									website made with React to try Intersection observer API with
-									the help of HackerNews API.
-								</p>
-							</li>
-							<li className={utilStyles.listItem}>
-								<p
-									className={`${utilStyles.headingMd} ${utilStyles.paddingLg}`}
-								>
-									Other Projects.
-								</p>
-								<a
-									href="https://github.com/DevanshBajaj"
-									target="github"
-									className={utilStyles.headingSmAccent}
-								>
-									Check it Out!
-								</a>
-							</li>
-						</ul>
-					</div>
+					{projectList.map((project) => (
+						<div key={project.id}>
+							<ul className={utilStyles.list}>
+								<li className={utilStyles.listItem}>
+									<p
+										className={`${utilStyles.headingMd} ${utilStyles.paddingLg}`}
+									>
+										{project.title}
+									</p>
+									<a
+										href={project.url}
+										target="pokedex"
+										className={utilStyles.headingSmAccent}
+									>
+										{project.demo}
+									</a>
+									<p className={utilStyles.headingSm}>{project.description}</p>
+								</li>
+							</ul>
+						</div>
+					))}
 				</section>
 			</div>
 		</Layout>
