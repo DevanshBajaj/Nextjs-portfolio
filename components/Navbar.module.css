@@ -9,12 +9,12 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
+  gap: 0.6rem;
   padding: 0 1rem;
 }
 
 .header a {
   font-size: 1rem;
-  padding-right: 2rem;
   color: var(--theme-accent);
 }
 
@@ -52,17 +52,18 @@
 
 @media screen and (max-width: 767px) {
   .header a{
-    font-size: 16px;
-    padding-right: 0.5rem;
+    font-size: 0.9rem;
+  }
+  .header {
+    gap: 0.4rem;
   }
 }
 
-@media screen and (max-width: 360px) {
+@media (max-width: 362px) {
   .header a{
-    font-size: 14px;
-    padding-right: 0.5rem;
+    font-size: 0.7rem;
   }
-  .header{
-    padding: 0;
+  .header {
+    gap: 0.3rem;
   }
 }
