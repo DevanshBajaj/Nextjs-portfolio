@@ -58,6 +58,7 @@
   line-height: 1.6;
   margin: 12px 0;
 }
+
 .headingSmAccent {
   font-size: 1rem;
   color: var(--theme-accent);

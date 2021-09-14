@@ -52,8 +52,6 @@ export default function Home({ allPostsData }) {
 								<a className={utilStyles.accentLink}>{title}</a>
 							</Link>
 							<br />
-							{id}
-							<br />
 							<small className={utilStyles.lightText}>
 								<Date dateString={date} />
 							</small>
