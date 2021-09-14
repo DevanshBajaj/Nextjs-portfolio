@@ -23,6 +23,7 @@
     "react-syntax-highlighter": "^15.4.4",
     "rehype-raw": "^6.1.0",
     "remark": "13",
+    "remark-gfm": "^2.0.0",
     "remark-html": "^13.0.2",
     "sharp": "^0.29.1",
     "sitemap": "^7.0.0"

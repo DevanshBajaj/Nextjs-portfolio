@@ -2,6 +2,7 @@
 
 :root {
   --theme-bg: #ffffff;
+  --theme-bgcode: #1F1E1F;
   --theme-text: #000;
   --theme-accent: #D81B60;
   --theme-sectext: #828282;
@@ -9,18 +10,21 @@
 }
 html[data-theme="dark"], [data-theme='dark'] {
   --theme-bg: #212121;
+  --theme-bgcode: #212121;
   --theme-text: #ffffff;
   --theme-accent: #D81B60;
   --theme-sectext: #CFCFCF;
 }
 [data-theme="nord"] , [data-theme='nord'] body {
   --theme-bg: #1F1E1F;
+  --theme-bgcode: #1F1E1F;
   --theme-text: #ffffff;
   --theme-accent: #9AC1B4;
   --theme-sectext: #CFCFCF;
 }
 [data-theme="blue"] , [data-theme='blue'] body {
   --theme-bg: #161c35;
+  --theme-bgcode: #161c35;
   --theme-text: #ffffff;
   --theme-accent: #7c91e2;
   --theme-sectext: #CFCFCF;

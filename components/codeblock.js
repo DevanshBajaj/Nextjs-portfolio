@@ -12,6 +12,18 @@ const CodeBlock = {
 				PreTag="div"
 				wrapLines={true}
 				wrapLongLines={true}
+				customStyle={{
+					backgroundColor: "var(--theme-bgcode)",
+					opacity: "1",
+					marginTop: "2rem",
+					border: "2px solid var(--theme-accent)",
+					borderRadius: "4px",
+				}}
+				codeTagProps={{
+					style: {
+						color: "var(--theme-secText)",
+					},
+				}}
 				{...props}
 			>
 				{String(children).replace(/\n$/, "")}

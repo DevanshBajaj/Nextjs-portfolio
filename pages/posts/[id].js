@@ -7,6 +7,8 @@ import CodeBlock from "../../components/codeblock";
 import Profile from "../../public/images/profile.png";
 import { getAllPostIds, getPostData } from "../../lib/posts";
 import utilStyles from "../../styles/utils.module.css";
+import rehypeRaw from "rehype-raw";
+import remarkGfm from "remark-gfm";
 
 export async function getStaticProps({ params }) {
 	const postData = await getPostData(params.id);
@@ -56,9 +58,13 @@ export default function Post({ postData }) {
 						<Date dateString={postData.date} />
 					</h3>
 				</div>
-				<ReactMarkdown components={CodeBlock}>
-					{postData.markdown}
-				</ReactMarkdown>
+				<ReactMarkdown
+					remarkPlugins={[remarkGfm]}
+					components={CodeBlock}
+					rehypePlugins={[rehypeRaw]}
+					// eslint-disable-next-line react/no-children-prop
+					children={postData.markdown}
+				/>
 			</article>
 		</Layout>
 	);
