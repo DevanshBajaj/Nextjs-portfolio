@@ -11,13 +11,13 @@ class MyDocument extends Document {
 			<Html lang="en">
 				<Head>
 					<meta charset="UTF-8" />
-					<meta name="application-name" content="PWA App" />
+					<meta name="application-name" content="Portfolio" />
 					<meta name="apple-mobile-web-app-capable" content="yes" />
 					<meta
 						name="apple-mobile-web-app-status-bar-style"
 						content="default"
 					/>
-					<meta name="apple-mobile-web-app-title" content="Portfolio PWA" />
+					<meta name="apple-mobile-web-app-title" content="Portfolio" />
 					<meta name="description" content="Devansh Bajaj's Portfolio" />
 					<meta name="format-detection" content="telephone=no" />
 					<meta name="mobile-web-app-capable" content="yes" />
@@ -65,34 +65,6 @@ class MyDocument extends Document {
 						color="#5bbad5"
 					/>
 					<link rel="shortcut icon" href="/favicon.ico" />
-
-					<meta name="twitter:card" content="summary" />
-					<meta
-						name="twitter:url"
-						content="https://nextjs-devanshblog.vercel.app/"
-					/>
-					<meta name="twitter:title" content="Portfolio" />
-					<meta
-						name="twitter:description"
-						content="Devansh Bajaj's Portfolio"
-					/>
-					<meta
-						name="twitter:image"
-						content="https://nextjs-devanshblog.vercel.app/icons/android-chrome-192x192.png"
-					/>
-					<meta name="twitter:creator" content="@DavidWShadow" />
-					<meta property="og:type" content="website" />
-					<meta property="og:title" content="PWA App" />
-					<meta property="og:description" content="Best PWA App in the world" />
-					<meta property="og:site_name" content="PWA App" />
-					<meta
-						property="og:url"
-						content="https://nextjs-devanshblog.vercel.app"
-					/>
-					<meta
-						property="og:image"
-						content="https://nextjs-devanshblog.vercel.app/icons/apple-touch-icon.png"
-					/>
 					<link
 						rel="apple-touch-startup-image"
 						href="/images/apple_splash_2048.png"

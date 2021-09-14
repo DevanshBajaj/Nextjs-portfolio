@@ -18,7 +18,7 @@
 }
 
 .footerEmail {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: var(--theme-accent);
 }
 
@@ -44,7 +44,7 @@
     
   }
   .footerEmail {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
   .logowrapper svg {
     height: 20px;
@@ -57,7 +57,7 @@
     font-size: 0.8rem;
   }
   .footerEmail {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
   }
   .logowrapper svg {
     height: 18px;
