@@ -35,7 +35,7 @@ export default function Home({ allPostsData }) {
 					working with tools like Figma for designing.
 					<br />
 					<br />
-					Here you can see stuff I use in my daily life -{" "}
+					Here you can see the setup I use -{" "}
 					<Link href="/uses">
 						<a className={utilStyles.accentLink}>Uses.</a>
 					</Link>

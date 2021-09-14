@@ -16,6 +16,7 @@ const footer = () => {
 			>
 				db@devanshbajaj.dev
 			</a>
+
 			<div className={styles.logowrapper}>
 				<a
 					href="https://twitter.com/devansh21db"

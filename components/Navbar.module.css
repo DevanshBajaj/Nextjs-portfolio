@@ -59,7 +59,19 @@
   }
 }
 
-@media (max-width: 362px) {
+@media screen and (max-width: 376px) {
+  .wrapper {
+    justify-content: space-around;
+  }
+  .header a{
+    font-size: 0.8rem;
+  }
+  .header {
+    gap: 0.3rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
   .header a{
     font-size: 0.7rem;
   }
@@ -67,3 +79,4 @@
     gap: 0.3rem;
   }
 }
+

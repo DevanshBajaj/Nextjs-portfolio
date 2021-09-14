@@ -6,15 +6,19 @@
   margin: 2rem 0;
 }
 
+.footerWrapper {
+  display: flex;
+  flex-direction: column;
+}
 
 .footerText {
   margin-bottom: 0.5rem;
-  font-size: 1.2rem;
-  color: var(--theme-text);
+  font-size: 1rem;
+  color: var(--theme-sectext);
 }
 
 .footerEmail {
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: var(--theme-accent);
 }
 
@@ -30,29 +34,30 @@
 
 .logowrapper svg {
   color: var(--theme-accent);
-  height: 26px;
-  width: 26px;
+  height: 24px;
+  width: 24px;
 }
 
 @media screen and (max-width: 767px) {
   .footerText {
-    font-size: 1rem;
+    font-size: 0.9rem;
+    
   }
   .footerEmail {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   .logowrapper svg {
-    height: 24px;
-    width: 24px;
+    height: 20px;
+    width: 20px;
   }
 }
 
 @media screen and (max-width: 360px) {
   .footerText {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   .footerEmail {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
   .logowrapper svg {
     height: 18px;
