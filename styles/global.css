@@ -71,9 +71,12 @@ select {
   height: 4px;
 }
 ::-webkit-scrollbar-track {
-background: var(--theme-bg);
+  background: var(--theme-bg);
 }
 
 ::-webkit-scrollbar-thumb {
-background: var(--theme-accent); 
+  border: 4px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  border-radius: 9999px;
+  background: var(--theme-accent); 
 }

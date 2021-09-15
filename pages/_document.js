@@ -28,7 +28,12 @@ class MyDocument extends Document {
 					<meta name="msapplication-TileColor" content="#2B5797" />
 					<meta name="msapplication-tap-highlight" content="no" />
 					<meta name="theme-color" content="#000000" />
-
+					<link rel="preconnect" href="https://fonts.googleapis.com" />
+					<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+					<link
+						href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400&display=swap"
+						rel="stylesheet"
+					></link>
 					<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
 					<link
 						rel="apple-touch-icon"
