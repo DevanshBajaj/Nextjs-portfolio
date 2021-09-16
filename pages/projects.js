@@ -27,6 +27,14 @@ const projectList = [
 	},
 	{
 		id: 3,
+		title: "This Website",
+		description: `This portfolio site is made with the help of next.js and few libraries to
+		make minimal and useful blog website. It also helped me learn many aspects of next.js.`,
+		url: `https://github.com/DevanshBajaj/Nextjs-portfolio`,
+		demo: "Github Repo",
+	},
+	{
+		id: 4,
 		title: "Other Projects.",
 		url: `https://github.com/DevanshBajaj`,
 		demo: "Check it Out",
