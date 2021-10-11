@@ -14,12 +14,12 @@
 }
 
 .header a {
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: var(--theme-accent);
 }
 
 .header a:hover {
-  text-decoration: underline 4px var(--theme-accent);
+  text-decoration: underline 2px var(--theme-accent);
 }
 
 .select_wrapper {
@@ -52,10 +52,10 @@
 
 @media screen and (max-width: 767px) {
   .header a{
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   .header {
-    gap: 0.4rem;
+    gap: 0.6rem;
   }
 }
 
@@ -73,7 +73,7 @@
 
 @media screen and (max-width: 360px) {
   .header a{
-    font-size: 0.7rem;
+    font-size: 0.6rem;
   }
   .header {
     gap: 0.3rem;

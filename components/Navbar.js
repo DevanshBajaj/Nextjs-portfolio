@@ -1,11 +1,13 @@
 import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
 import styles from "./Navbar.module.css";
-import Link from "next/link";
+import NavLink from "./NavLink";
+import { useRouter } from "next/router";
 
 const Navbar = ({}) => {
 	const [mounted, setMounted] = useState(false);
 	const { theme, setTheme } = useTheme();
+	const router = useRouter();
 
 	useEffect(() => setMounted(true), []);
 
@@ -14,15 +16,15 @@ const Navbar = ({}) => {
 	return (
 		<div className={styles.wrapper}>
 			<header className={styles.header}>
-				<Link href="/">
+				<NavLink href="/">
 					<a>Home</a>
-				</Link>
-				<Link href="/blog">
+				</NavLink>
+				<NavLink href="/blog">
 					<a>Blog</a>
-				</Link>
-				<Link href="/projects">
+				</NavLink>
+				<NavLink href="/projects">
 					<a>Projects</a>
-				</Link>
+				</NavLink>
 				<a
 					href="https://raw.githubusercontent.com/DevanshBajaj/OLD_portfolio/master/devanshResume.pdf"
 					rel="noreferrer"
