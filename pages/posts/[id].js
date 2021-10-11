@@ -1,5 +1,6 @@
 import Layout from "../../components/layout";
 import Head from "next/head";
+import Link from "next/link";
 import Date from "../../components/date";
 import Image from "next/image";
 import ReactMarkdown from "react-markdown";
@@ -66,6 +67,11 @@ export default function Post({ postData }) {
 					children={postData.markdown}
 				/>
 			</article>
+			<div className={utilStyles.backToHome}>
+				<Link href="/blog">
+					<a className={utilStyles.accentLink}>← Back to Posts</a>
+				</Link>
+			</div>
 		</Layout>
 	);
 }
