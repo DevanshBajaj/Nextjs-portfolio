@@ -105,6 +105,16 @@
   margin: 0;
 }
 
+.backToHome {
+  margin: 3rem 0 0;
+}
+
+.active {
+  border: 2px solid var(--theme-accent);
+  padding: 0.2rem;
+  border-radius: 4px;
+}
+
 .blogauthor {
   -webkit-margin-before: auto;
   margin-block-start: auto;
