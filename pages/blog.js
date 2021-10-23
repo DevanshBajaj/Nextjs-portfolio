@@ -35,7 +35,7 @@ const blog = ({ allPostsData }) => {
 					<meta name="twitter:card" content="summary_large_image" />
 				</Head>
 				<h2 className={utilStyles.heading1Xl}>
-					Blogs<span className={utilStyles.accentLink}>.</span>
+					Blogs (WIP)<span className={utilStyles.accentLink}>.</span>
 				</h2>
 				{allPostsData.map(({ id, date, title }) => (
 					<div className={styles.posts} key={id}>
