@@ -5,3 +5,7 @@ module.exports = withPWA({
 		dest: "public",
 	},
 });
+
+module.exports = {
+	swcMinify: true,
+};
