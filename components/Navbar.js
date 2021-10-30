@@ -2,12 +2,10 @@ import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
 import styles from "./Navbar.module.css";
 import NavLink from "./NavLink";
-import { useRouter } from "next/router";
 
 const Navbar = ({}) => {
 	const [mounted, setMounted] = useState(false);
 	const { theme, setTheme } = useTheme();
-	const router = useRouter();
 
 	useEffect(() => setMounted(true), []);
 
