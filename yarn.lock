@@ -3109,6 +3109,11 @@ hast-util-whitespace@^1.0.0:
   resolved "https://registry.yarnpkg.com/hast-util-whitespace/-/hast-util-whitespace-1.0.4.tgz#e4fe77c4a9ae1cb2e6c25e02df0043d0164f6e41"
   integrity sha512-I5GTdSfhYfAPNztx2xJRQpG8cuDSNt599/7YUn7Gx/WxNMsG+a835k97TDkFgk123cwjfwINaZknkKkphx/f2A==
 
+hast-util-whitespace@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/hast-util-whitespace/-/hast-util-whitespace-2.0.0.tgz#4fc1086467cc1ef5ba20673cb6b03cec3a970f1c"
+  integrity sha512-Pkw+xBHuV6xFeJprJe2BBEoDV+AvQySaz3pPDRUs5PNZEMQjpXJJueqrpcHIXxnWTcAGi/UOCgVShlkY6kLoqg==
+
 hastscript@^6.0.0:
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/hastscript/-/hastscript-6.0.0.tgz#e8768d7eac56c3fdeac8a92830d58e811e5bf640"
@@ -5268,6 +5273,16 @@ remark-stringify@^9.0.0:
   integrity sha512-mWmNg3ZtESvZS8fv5PTvaPckdL4iNlCHTt8/e/8oN08nArHRHjNZMKzA/YW3+p7/lYqIw4nx1XsjCBo/AxNChg==
   dependencies:
     mdast-util-to-markdown "^0.6.0"
+
+remark-unwrap-images@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/remark-unwrap-images/-/remark-unwrap-images-3.0.0.tgz#23b7d9e1f66e1154a87edb52c3ced0bde6da15ce"
+  integrity sha512-lB8z7ZIHFHpSm3MAaAIfd0kt9gmXpI0p5pipzYiWmfurWYULVVCrfnqCD9bHPsZttQxbDL+eKN6cp6LPPfCAog==
+  dependencies:
+    "@types/mdast" "^3.0.0"
+    hast-util-whitespace "^2.0.0"
+    unified "^10.0.0"
+    unist-util-visit "^4.0.0"
 
 remark@13:
   version "13.0.0"

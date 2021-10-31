@@ -2,7 +2,7 @@
 title: 'First Blog'
 date: '2021-09-14'
 author: 'devansh bajaj'
-image: '../public/images/profile.jpg'
+image: '../images/profile.png'
 ---
 
 Hello Everyone,

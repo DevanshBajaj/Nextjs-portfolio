@@ -5,6 +5,7 @@ import utilStyles from "../styles/utils.module.css";
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaTwitter, FaDribbble } from "react-icons/fa";
 import Navbar from "./Navbar";
+import profileimg from "../images/profile.png";
 
 const name = "Devansh Bajaj";
 export const siteTitle = "Devansh Bajaj";
@@ -46,7 +47,7 @@ const Layout = ({ children, home }) => {
 									<div className={styles.profileimg}>
 										<Image
 											priority
-											src="/images/profile.png"
+											src={profileimg}
 											height={144}
 											width={144}
 											alt={name}

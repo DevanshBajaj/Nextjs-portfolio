@@ -5,11 +5,12 @@ import Date from "../../components/date";
 import Image from "next/image";
 import ReactMarkdown from "react-markdown";
 import CodeBlock from "../../components/codeblock";
-import Profile from "../../public/images/profile.png";
+import Profile from "../../images/profile.png";
 import { getAllPostIds, getPostData } from "../../lib/posts";
 import utilStyles from "../../styles/utils.module.css";
 import rehypeRaw from "rehype-raw";
 import remarkGfm from "remark-gfm";
+import remarkUnwrapImages from "remark-unwrap-images";
 
 export async function getStaticProps({ params }) {
 	const postData = await getPostData(params.id);
@@ -60,7 +61,7 @@ export default function Post({ postData }) {
 					</h3>
 				</div>
 				<ReactMarkdown
-					remarkPlugins={[remarkGfm]}
+					remarkPlugins={[remarkGfm, remarkUnwrapImages]}
 					components={CodeBlock}
 					rehypePlugins={[rehypeRaw]}
 					// eslint-disable-next-line react/no-children-prop
