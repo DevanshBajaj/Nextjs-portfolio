@@ -30,3 +30,9 @@ yarn-error.log*
 .env.production.local
 **/public/workbox-*.js
 **/public/sw.js
+public/workbox-*.map
+public/service-worker.js
+public/fallback-*.js
+public/fallback-development.js
+public/service-worker.js.map
+public/fallback-*.js
