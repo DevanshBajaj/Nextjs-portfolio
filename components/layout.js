@@ -1,10 +1,10 @@
 import Head from "next/head";
 import Image from "next/image";
+import Navbar from "./Navbar";
 import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaTwitter, FaDribbble } from "react-icons/fa";
-import Navbar from "./Navbar";
 import profileimg from "../images/profile.png";
 
 const name = "Devansh Bajaj";

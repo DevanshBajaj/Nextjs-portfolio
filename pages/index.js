@@ -1,5 +1,5 @@
-import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
+import Head from "next/head";
 import utilStyles from "../styles/utils.module.css";
 import { getSortedPostsData } from "../lib/posts";
 import Link from "next/link";
@@ -35,7 +35,7 @@ export default function Home({ allPostsData }) {
 					working with tools like Figma for designing.
 					<br />
 					<br />
-					Here you can see the setup I use -{" "}
+					Here you can see the setup I use -
 					<Link href="/uses">
 						<a className={utilStyles.accentLink}>Uses.</a>
 					</Link>
