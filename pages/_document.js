@@ -11,14 +11,14 @@ class MyDocument extends Document {
 			<Html lang="en">
 				<Head>
 					<meta charSet="UTF-8" />
-					<meta name="application-name" content="Portfolio" />
+					<meta name="application-name" content="Devansh Bajaj" />
 					<meta name="apple-mobile-web-app-capable" content="yes" />
 					<meta
 						name="apple-mobile-web-app-status-bar-style"
 						content="default"
 					/>
-					<meta name="apple-mobile-web-app-title" content="Portfolio" />
-					<meta name="description" content="Devansh Bajaj's Portfolio" />
+					<meta name="apple-mobile-web-app-title" content="Devansh Bajaj" />
+					<meta name="description" content="Devansh Bajaj" />
 					<meta name="format-detection" content="telephone=no" />
 					<meta name="mobile-web-app-capable" content="yes" />
 					<meta

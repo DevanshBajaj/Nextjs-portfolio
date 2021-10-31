@@ -10,8 +10,8 @@ const StyledBurger = styled.button`
 	display: none;
 	flex-direction: column;
 	justify-content: space-around;
-	width: 2rem;
-	height: 2rem;
+	width: 1.6rem;
+	height: 1.6rem;
 	background: transparent;
 	border: none;
 	cursor: pointer;
@@ -25,8 +25,8 @@ const StyledBurger = styled.button`
 	}
 
 	div {
-		width: 2rem;
-		height: 0.25rem;
+		width: 1.7rem;
+		height: 2px;
 		border-radius: 10px;
 		transition: all 0.3s linear;
 		position: relative;
@@ -34,7 +34,7 @@ const StyledBurger = styled.button`
 		background: var(--theme-accent);
 
 		:first-child {
-			transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};
+			transform: ${({ open }) => (open ? "rotate(42deg)" : "rotate(0)")};
 		}
 
 		:nth-child(2) {
@@ -43,7 +43,7 @@ const StyledBurger = styled.button`
 		}
 
 		:nth-child(3) {
-			transform: ${({ open }) => (open ? "rotate(-45deg)" : "rotate(0)")};
+			transform: ${({ open }) => (open ? "rotate(-42deg)" : "rotate(0)")};
 		}
 	}
 `;
@@ -64,6 +64,7 @@ const Nav = styled.section`
 const LeftPart = styled.div`
 	display: flex;
 	flex-direction: row;
+	align-items: center;
 	-webkit-tap-highlight-color: transparent;
 	@media (max-width: 700px) {
 		display: none;
@@ -81,12 +82,13 @@ const StyledMenu = styled.nav`
 	display: none;
 	flex-direction: column;
 	justify-content: center;
+	align-items: flex-start;
 	z-index: 10;
 	background: var(--theme-bg);
-	height: 50%;
-	padding: 2rem;
+	height: 42vh;
+	padding: 1.2rem;
 	position: absolute;
-	top: 0;
+	top: 0.6rem;
 	left: 0;
 	transform: ${({ open }) => (open ? "translateX(0)" : "translateX(-100%)")};
 	transition: transform 0.3s ease-in-out;
@@ -96,12 +98,17 @@ const StyledMenu = styled.nav`
 		display: flex;
 	}
 
+	@media (max-height: 700px) {
+		top: 1.2rem;
+		height: 45vh;
+	}
+	
 	a {
-		font-size: 1.2rem;
+		font-size: 0.8rem;
 		text-transform: uppercase;
 		color: var(--theme-accent)
 		text-decoration: none;
-		margin: 0.4rem;
+		margin: 0.4rem 0.6rem;
 		transition: color 0.3s linear;
 		&:hover {
 			color: var(--theme-accent)
@@ -128,7 +135,7 @@ const Navbar = ({}) => {
 		<div ref={node}>
 			<Wrapper>
 				<Nav>
-					<StyledBurger open={open} onClick={handleToggle}>
+					<StyledBurger open={open} onClick={handleToggle} aria-label="menu">
 						<div />
 						<div style={{ width: "1.2rem" }} />
 						<div />

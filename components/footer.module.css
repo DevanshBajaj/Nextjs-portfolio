@@ -13,13 +13,14 @@
 }
 
 .footerText {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
   font-size: 1rem;
   color: var(--theme-sectext);
 }
 
 .footerEmail {
-  font-size: 0.9rem;
+  font-size: 1rem;
+  padding: 0.6rem;
   color: var(--theme-accent);
 }
 
@@ -29,7 +30,7 @@
   justify-content: center;
   gap: 1rem;
   align-items: center;
-  margin: 1rem 0 0 0;
+  margin: 0.8rem 0 0 0;
   flex-direction: row;
 }
 
@@ -45,7 +46,7 @@
     
   }
   .footerEmail {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
   .logowrapper svg {
     height: 20px;
@@ -58,7 +59,7 @@
     font-size: 0.8rem;
   }
   .footerEmail {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
   .logowrapper svg {
     height: 18px;
