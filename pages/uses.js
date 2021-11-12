@@ -43,7 +43,7 @@ const gearList = [
 		id: 1,
 		title: "PC",
 		description:
-			"Ryzen 3600 | NVIDIA GTX 1660s | 16gb ram | 512 GB NVMe SSD | 1TB HDD",
+			"Ryzen 3600 | NVIDIA GTX 1660s | 16gb ram | 256 GB NVMe M.2 SSD | 3TB HDD",
 		url: "https://www.reddit.com/r/pcmasterrace/",
 	},
 	{
@@ -63,6 +63,12 @@ const gearList = [
 		title: 'LG 22" IPS Monitor',
 		description: "Crisp, bright and *just* the right size",
 		url: "https://www.lg.com/in/monitors/lg-22MP68VQ-P",
+	},
+	{
+		id: 5,
+		title: "S20 FE",
+		description: "only decent sammy with snapdragon",
+		url: "https://www.samsung.com/in/smartphones/galaxy-s20/galaxy-s20-fe/",
 	},
 ];
 const uses = () => {
