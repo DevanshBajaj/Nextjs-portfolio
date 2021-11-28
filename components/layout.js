@@ -8,7 +8,7 @@ import { FaGithub, FaLinkedin, FaTwitter, FaDribbble } from "react-icons/fa";
 import profileimg from "../images/profile.png";
 
 const name = "Devansh Bajaj";
-export const siteTitle = "Devansh Bajaj";
+const siteTitle = "Devansh Bajaj";
 
 const variants = {
 	hidden: { opacity: 0, x: -200, y: 0 },

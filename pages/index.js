@@ -1,9 +1,15 @@
-import Layout, { siteTitle } from "../components/layout";
 import Head from "next/head";
 import utilStyles from "../styles/utils.module.css";
 import { getSortedPostsData } from "../lib/posts";
 import Link from "next/link";
 import Date from "../components/date";
+import dynamic from 'next/dynamic'
+
+const Layout = dynamic(
+	() => import('../components/layout'),
+	{ loading: () => <p>...</p> }
+)
+
 
 export async function getStaticProps() {
 	const allPostsData = getSortedPostsData();
@@ -18,7 +24,7 @@ export default function Home({ allPostsData }) {
 	return (
 		<Layout home>
 			<Head>
-				<title>{siteTitle}</title>
+				<title>Devansh Bajaj</title>
 			</Head>
 			<section className={`${utilStyles.paragraphMd} ${utilStyles.paddingLg}`}>
 				<h2 className={`${utilStyles.heading1Xl} ${utilStyles.paddingLg}`}>

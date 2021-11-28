@@ -5,73 +5,82 @@ import Layout from "../components/layout";
 
 export const siteTitle = "Uses";
 
-const codingSoftwares = [
-	{
-		id: 1,
-		title: "Visual Studio Code",
-		url: "https://code.visualstudio.com/",
-		description: "Hands down my favorite editor",
-	},
-	{
-		id: 2,
-		title: "Ariake Dark",
-		url: "https://marketplace.visualstudio.com/items?itemName=wart.ariake-dark",
-		description: "VS Code Theme",
-	},
-	{
-		id: 3,
-		title: "Jetbrains Mono",
-		url: "https://code.visualstudio.com/",
-		description: "The best programming font I have ever used",
-	},
-	{
-		id: 4,
-		title: "Google Chrome",
-		url: "https://www.google.com/chrome/",
-		description: `Unmatched DevTools 👌`,
-	},
-	{
-		id: 5,
-		title: "Postman",
-		url: "https://www.postman.com/",
-		description: "Best tool for API testing",
-	},
-];
+export async function getStaticProps() {
+	const codingSoftwares = [
+		{
+			id: 1,
+			title: "Visual Studio Code",
+			url: "https://code.visualstudio.com/",
+			description: "Hands down my favorite editor",
+		},
+		{
+			id: 2,
+			title: "Ariake Dark",
+			url: "https://marketplace.visualstudio.com/items?itemName=wart.ariake-dark",
+			description: "VS Code Theme",
+		},
+		{
+			id: 3,
+			title: "Jetbrains Mono",
+			url: "https://code.visualstudio.com/",
+			description: "The best programming font I have ever used",
+		},
+		{
+			id: 4,
+			title: "Google Chrome",
+			url: "https://www.google.com/chrome/",
+			description: `Unmatched DevTools 👌`,
+		},
+		{
+			id: 5,
+			title: "Postman",
+			url: "https://www.postman.com/",
+			description: "Best tool for API testing",
+		},
+	];
 
-const gearList = [
-	{
-		id: 1,
-		title: "PC",
-		description:
-			"Ryzen 3600 | NVIDIA GTX 1660s | 16gb ram | 256 GB NVMe M.2 SSD | 3TB HDD",
-		url: "https://www.reddit.com/r/pcmasterrace/",
-	},
-	{
-		id: 2,
-		title: "ASUS ROG GL553VE",
-		description: "PS: Never buy a gaming laptop",
-		url: "https://www.asus.com/Laptops/ROG-GL553VE/",
-	},
-	{
-		id: 3,
-		title: "Apple iPad",
-		description: "8th Generation | 128 GB | Wi-Fi | 1st Gen Pencil",
-		url: "https://www.apple.com/in/ipad-10.2/c",
-	},
-	{
-		id: 4,
-		title: 'LG 22" IPS Monitor',
-		description: "Crisp, bright and *just* the right size",
-		url: "https://www.lg.com/in/monitors/lg-22MP68VQ-P",
-	},
-	{
-		id: 5,
-		title: "S20 FE",
-		description: "only decent sammy with snapdragon",
-		url: "https://www.samsung.com/in/smartphones/galaxy-s20/galaxy-s20-fe/",
-	},
-];
-const uses = () => {
+	const gearList = [
+		{
+			id: 1,
+			title: "PC",
+			description:
+				"Ryzen 3600 | NVIDIA GTX 1660s | 16gb ram | 256 GB NVMe M.2 SSD | 3TB HDD",
+			url: "https://www.reddit.com/r/pcmasterrace/",
+		},
+		{
+			id: 2,
+			title: "ASUS ROG GL553VE",
+			description: "PS: Never buy a gaming laptop",
+			url: "https://www.asus.com/Laptops/ROG-GL553VE/",
+		},
+		{
+			id: 3,
+			title: "Apple iPad",
+			description: "8th Generation | 128 GB | Wi-Fi | 1st Gen Pencil",
+			url: "https://www.apple.com/in/ipad-10.2/c",
+		},
+		{
+			id: 4,
+			title: 'LG 22" IPS Monitor',
+			description: "Crisp, bright and *just* the right size",
+			url: "https://www.lg.com/in/monitors/lg-22MP68VQ-P",
+		},
+		{
+			id: 5,
+			title: "S20 FE",
+			description: "only decent sammy with snapdragon",
+			url: "https://www.samsung.com/in/smartphones/galaxy-s20/galaxy-s20-fe/",
+		},
+	];
+	return {
+		props: {
+			codingSoftwares,
+			gearList
+		}
+	}
+}
+
+const uses = ({ codingSoftwares, gearList }) => {
 	return (
 		<Layout className={styles.pagescontainer}>
 			<div className={styles.pagescontainer}>

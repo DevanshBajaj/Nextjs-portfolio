@@ -5,43 +5,52 @@ import Layout from "../components/layout";
 
 export const siteTitle = "Projects";
 
-const projectList = [
-	{
-		id: 1,
-		title: "Pokedex",
-		description: `I've created this project in react to practice and improve
+export async function getStaticProps() {
+	const projectList = [
+		{
+			id: 1,
+			title: "Pokedex",
+			description: `I've created this project in react to practice and improve
 		my skills. I made it with the help of an API called using
 		axios, React to create frontend with components and some
 		styling.`,
-		url: `https://pokedex.devanshbajaj.dev/`,
-		demo: "Live Demo",
-	},
-	{
-		id: 2,
-		title: "Hacker News Website",
-		description: `A custom infinite scroll implementation for the HackerNews
+			url: `https://pokedex.devanshbajaj.dev/`,
+			demo: "Live Demo",
+		},
+		{
+			id: 2,
+			title: "Hacker News Website",
+			description: `A custom infinite scroll implementation for the HackerNews
 		website made with React to try Intersection observer API with
 		the help of HackerNews API.`,
-		url: `https://hn-website.netlify.app/`,
-		demo: "Live Demo",
-	},
-	{
-		id: 3,
-		title: "This Website",
-		description: `This portfolio site is made with the help of next.js and few libraries to
+			url: `https://hn-website.netlify.app/`,
+			demo: "Live Demo",
+		},
+		{
+			id: 3,
+			title: "This Website",
+			description: `This portfolio site is made with the help of next.js and few libraries to
 		make minimal and useful blog website. It also helped me learn many aspects of next.js.`,
-		url: `https://github.com/DevanshBajaj/Nextjs-portfolio`,
-		demo: "Github Repo",
-	},
-	{
-		id: 4,
-		title: "Other Projects.",
-		url: `https://github.com/DevanshBajaj`,
-		demo: "Check it Out",
-	},
-];
+			url: `https://github.com/DevanshBajaj/Nextjs-portfolio`,
+			demo: "Github Repo",
+		},
+		{
+			id: 4,
+			title: "Other Projects.",
+			url: `https://github.com/DevanshBajaj`,
+			demo: "Check it Out",
+		},
+	]
 
-const projects = () => {
+	return {
+		props: {
+			projectList,
+		},
+	};
+
+};
+
+const projects = ({ projectList }) => {
 	return (
 		<Layout>
 			<div className={styles.pagescontainer}>
