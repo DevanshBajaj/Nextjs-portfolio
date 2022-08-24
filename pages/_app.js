@@ -4,6 +4,7 @@ import { AnimatePresence } from "framer-motion";
 import Footer from "../components/footer";
 import NextNprogress from "nextjs-progressbar";
 import Head from "next/head";
+import Script from "next/script";
 
 function App({ Component, pageProps }) {
 	return (
@@ -12,6 +13,15 @@ function App({ Component, pageProps }) {
 			forcedTheme={Component.theme || undefined}
 			defaultTheme="blue"
 		>
+			<Script src="https://scripts.simpleanalyticscdn.com/latest.js" />
+			<noscript>
+				{/* eslint-disable @next/next/no-img-element */}
+				<img
+					src="https://queue.simpleanalyticscdn.com/noscript.gif"
+					alt=""
+					referrerPolicy="no-referrer-when-downgrade"
+				/>
+			</noscript>
 			<Head>
 				<meta
 					name="viewport"
