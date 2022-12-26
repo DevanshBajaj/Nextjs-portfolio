@@ -49,6 +49,7 @@ class MyDocument extends Document {
 						sizes="180x180"
 						href="/icons/apple-touch-icon-180x180.png"
 					/>
+					<link rel="me" href="https://hachyderm.io/@devanshbajaj"/>
 					<link
 						rel="apple-touch-icon"
 						sizes="167x167"
