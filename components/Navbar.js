@@ -152,7 +152,7 @@ const Navbar = ({}) => {
 								<a>Projects</a>
 							</NavLink>
 							<a
-								href="https://raw.githubusercontent.com/DevanshBajaj/OLD_portfolio/master/devanshResume.pdf"
+								href="https://s3.devanshbajaj.dev/resume.pdf"
 								rel="noreferrer"
 								target="_blank"
 							>
@@ -189,7 +189,7 @@ const Navbar = ({}) => {
 						<a>Projects</a>
 					</NavLink>
 					<a
-						href="https://raw.githubusercontent.com/DevanshBajaj/OLD_portfolio/master/devanshResume.pdf"
+						href="https://s3.devanshbajaj.dev/resume.pdf"
 						rel="noreferrer"
 						target="_blank"
 					>
