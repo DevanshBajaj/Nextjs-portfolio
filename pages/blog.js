@@ -19,7 +19,7 @@ export const siteTitle = "Blogs";
 
 const blog = ({ allPostsData }) => {
 	return (
-		<Layout>
+        <Layout>
 			<div className={styles.pagescontainer}>
 				<Head>
 					<title>Blog</title>
@@ -41,11 +41,13 @@ const blog = ({ allPostsData }) => {
 				</h2>
 				{allPostsData.map(({ id, date, title }) => (
 					<div className={styles.posts} key={id}>
-						<Link href={`/posts/${id}`}>
-							<a className={`${utilStyles.headingLg} ${utilStyles.accentLink}`}>
-								{title}
-							</a>
-						</Link>
+						<Link
+                            href={`/posts/${id}`}
+                            className={`${utilStyles.headingLg} ${utilStyles.accentLink}`}>
+
+                            {title}
+
+                        </Link>
 						{id}
 						<small className={utilStyles.lightText}>
 							<Date dateString={date} />
@@ -54,7 +56,7 @@ const blog = ({ allPostsData }) => {
 				))}
 			</div>
 		</Layout>
-	);
+    );
 };
 
 export default blog;

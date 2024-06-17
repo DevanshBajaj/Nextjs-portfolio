@@ -22,7 +22,7 @@ export async function getStaticProps() {
 
 export default function Home({ allPostsData }) {
 	return (
-		<Layout home>
+        <Layout home>
 			<Head>
 				<title>Devansh Bajaj</title>
 			</Head>
@@ -42,8 +42,8 @@ export default function Home({ allPostsData }) {
 					<br />
 					<br />
 					Here you can see the setup I use -
-					<Link href="/uses">
-						<a className={utilStyles.accentLink}>Uses.</a>
+					<Link href="/uses" className={utilStyles.accentLink}>
+						Uses.
 					</Link>
 				</p>
 			</section>
@@ -54,8 +54,8 @@ export default function Home({ allPostsData }) {
 				<ul className={utilStyles.list}>
 					{allPostsData.slice(0, 1).map(({ id, date, title }) => (
 						<li className={utilStyles.listItem} key={id}>
-							<Link href={`/posts/${id}`}>
-								<a className={utilStyles.accentLink}>{title}</a>
+							<Link href={`/posts/${id}`} className={utilStyles.accentLink}>
+								{title}
 							</Link>
 							<br />
 							<small className={utilStyles.lightText}>
@@ -64,10 +64,10 @@ export default function Home({ allPostsData }) {
 						</li>
 					))}
 				</ul>
-				<Link href={`/blog`}>
-					<a className={utilStyles.headingSmAccent}>More posts</a>
+				<Link href={`/blog`} className={utilStyles.headingSmAccent}>
+					More posts
 				</Link>
 			</section>
 		</Layout>
-	);
+    );
 }

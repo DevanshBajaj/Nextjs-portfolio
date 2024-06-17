@@ -47,7 +47,7 @@ const Layout = ({ children, home }) => {
 									<div className={styles.profileimg}>
 										<Image
 											priority
-											src={profileimg}
+											src={"https://s3.devanshbajaj.dev/IMG_2137.JPG"}
 											height={144}
 											width={144}
 											alt={name}

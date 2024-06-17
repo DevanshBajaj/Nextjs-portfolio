@@ -31,7 +31,7 @@ export async function getStaticPaths() {
 
 export default function Post({ postData }) {
 	return (
-		<Layout>
+        <Layout>
 			<Head>
 				<title>{postData.title}</title>
 				<meta
@@ -69,10 +69,10 @@ export default function Post({ postData }) {
 				/>
 			</article>
 			<div className={utilStyles.backToHome}>
-				<Link href="/blog">
-					<a className={utilStyles.accentLink}>← Back to Posts</a>
+				<Link href="/blog" className={utilStyles.accentLink}>
+					← Back to Posts
 				</Link>
 			</div>
 		</Layout>
-	);
+    );
 }

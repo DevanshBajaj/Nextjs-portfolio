@@ -4,18 +4,18 @@ import utilStyles from "../styles/utils.module.css";
 
 const Offline = () => {
 	return (
-		<div>
+        <div>
 			<h1>You are offline</h1>
 			<p>
 				You are currently offline. Please check your internet connection and try
 				again.
 			</p>
 			<div className={styles.backToHome}>
-				<Link href="/">
-					<a className={utilStyles.accentLink}>← Back to home</a>
+				<Link href="/" className={utilStyles.accentLink}>
+					← Back to home
 				</Link>
 			</div>
 		</div>
-	);
+    );
 };
 export default Offline;
