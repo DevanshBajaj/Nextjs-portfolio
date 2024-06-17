@@ -36,8 +36,6 @@ const blog = ({ allPostsData }) => {
 				</Head>
 				<h2 className={utilStyles.heading1Xl}>
 					Blogs<span className={utilStyles.accentLink}>.</span>
-					<br />
-					🚧 WIP 🚧
 				</h2>
 				{allPostsData.map(({ id, date, title }) => (
 					<div className={styles.posts} key={id}>
