@@ -5,8 +5,6 @@ author: 'devansh bajaj'
 image: '../images/profile.png'
 ---
 
-## Introduction to Server-Side Rendering in Next.js with an Example
-
 ### What is Server-Side Rendering?
 
 Server-Side Rendering (SSR) is a data rendering method in which web pages are rendered on the server rather than in the client's browser. This means that the server generates the required content, such as the HTML file, and sends it to the client, where it is then displayed without any delays. This approach improves performance, enhances SEO, and enhances user experience by rendering the content quickly.
