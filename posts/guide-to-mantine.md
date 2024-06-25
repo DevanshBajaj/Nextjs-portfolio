@@ -1,6 +1,6 @@
 ---
 title: 'Getting Started with Mantine: A Guide to Setup and Customizations'
-date: '2023-06-23'
+date: '2024-06-23'
 author: 'devansh bajaj'
 image: '../images/profile.png'
 ---

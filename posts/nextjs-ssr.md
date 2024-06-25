@@ -1,6 +1,6 @@
 ---
 title: 'Getting Started with Server-Side Rendering in Next.js Using SQLite'
-date: '2023-06-17'
+date: '2024-06-17'
 author: 'devansh bajaj'
 image: '../images/profile.png'
 ---
